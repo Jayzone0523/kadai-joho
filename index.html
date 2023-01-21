@@ -91,11 +91,11 @@ var chart = new Chart(ctx, {
       xAxes: [{
         type: 'realtime',
         realtime: {
-          //duration: 20000,
+          //duration: 500,
           delay: 4000,
           onRefresh: function(chart) {
 
-            am = new Ambient(56778, "3f46c10d0ff68aeb","26dfd08c3f8bd2dc");
+            am = new Ambient(60613, "3f46c10d0ff68aeb","aa4752374d090059");
             am.read({n:1}, function(response) {
             k=response.data;
             chart.data.datasets.forEach(function(dataset) {
